@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { saveAnswer } from '@/services/question'
 
 /**
- * 处理提交的答卷
+ * 处理提交的答卷。当发送请求到 /api/answer 路径时，该方法就会被执行
  * @param req  
  * @param res 
  */
@@ -31,6 +31,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
  * @returns 
  */
 function formatAnswerInfo(reqBody: any) {
+  console.log('answerinfo: ', JSON.stringify(reqBody))
+
   const answerList: any[] = []
 
   Object.keys(reqBody).forEach(key => {

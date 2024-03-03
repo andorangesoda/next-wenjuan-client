@@ -53,11 +53,11 @@ export default function Question(props: PropsType){
   </>
   
   return <PageWrapper title={title} desc={desc}>
+    {/* 这里提交，触发到 pages/api/answer.ts 中 handler 方法执行。 */}
     <form method='post' action="/api/answer">
       <input type="hidden" name="questionId" value={id}/>
       {ComponentListElem}
       <div className={styles.submitBtnContainer}>
-        {/* <input type="submit" value="提交"/> */}
         <button type="submit">提交</button>
       </div>
     </form>
