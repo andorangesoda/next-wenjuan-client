@@ -1,4 +1,4 @@
-## 基于 React + Next.js + Typescript 构建的问卷/试题系统的答题客户端。
+## 基于 React + Next.js + SSR + Typescript 构建的问卷/试题系统的答题客户端。
 
 ### 安装依赖
 
