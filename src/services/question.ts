@@ -17,7 +17,7 @@ export async function getQuestionById(id: string) {
  * @returns 
  */
 export async function saveAnswer(answerInfo: any) {
-  const url = '/api/answer'
+  const url = '/api/saveAnswer'
   const data = await post(url, answerInfo)
   return data
 }
